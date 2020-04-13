@@ -6,8 +6,8 @@ from PhysicsTools.NanoAODTools.postprocessing.framework.postprocessor import *
 from PhysicsTools.NanoAODTools.postprocessing.framework.crabhelper import inputFiles,runsAndLumis,outFileName
 from PhysicsTools.NanoAODTools.postprocessing.electronId.ElectronSkimmer import ElectronSkimmerSignal, ElectronSkimmerBackground
 
-#II = inputFiles()
-II = ['root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/QCD_Pt-170to300_EMEnriched_TuneCP5_13TeV_pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/1FB6AF93-29B0-F34E-92EC-E9C859AED428.root']
+II = inputFiles()
+#II = ['root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/QCD_Pt-170to300_EMEnriched_TuneCP5_13TeV_pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/1FB6AF93-29B0-F34E-92EC-E9C859AED428.root']
 
 if len(II)>0:
     if ('TTTo' in II[0]) or ('TTJets' in II[0]):
