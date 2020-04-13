@@ -4,7 +4,8 @@ from CRABClient.UserUtilities import config, getUsernameFromSiteDB
 config = Configuration()
 
 config.section_("General")
-config.General.requestName = 'NanoPost1'
+config.General.requestName = ''
+config.General.workArea = 'ElectronId'
 config.General.transferLogs=True
 config.section_("JobType")
 config.JobType.pluginName = 'Analysis'
@@ -18,16 +19,15 @@ config.Data.inputDataset = '/DYJetsToLL_1J_TuneCP5_13TeV-amcatnloFXFX-pythia8/Ru
 config.Data.inputDBS = 'global'
 config.Data.splitting = 'FileBased'
 #config.Data.splitting = 'EventAwareLumiBased'
-config.Data.unitsPerJob = 2
-config.Data.totalUnits = 10
+config.Data.unitsPerJob = 1
+#config.Data.totalUnits = 10
 
-config.Data.outLFNDirBase = '/store/user/%s/NanoPost' % (getUsernameFromSiteDB())
+config.Data.outLFNDirBase = '/store/user/ajafari/ElectronIdApril2020' #'/store/user/%s/NanoPost' % (getUsernameFromSiteDB())
 config.Data.publication = False
-config.Data.outputDatasetTag = 'NanoTestPost'
+#config.Data.outputDatasetTag = 'NanoTestPost'
 config.section_("Site")
-config.Site.storageSite = "T2_DE_DESY"
-
-#config.Site.storageSite = "T2_CH_CERN"
+#config.Site.storageSite = "T2_DE_DESY"
+config.Site.storageSite = "T2_CH_CERN"
 #config.section_("User")
 #config.User.voGroup = 'dcms'
 

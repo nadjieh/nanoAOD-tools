@@ -15,7 +15,7 @@ keep Electron_miniPFRelIso_all
 keep Electron_miniPFRelIso_chg
 keep Electron_pfRelIso03_all
 keep Electron_pfRelIso03_chg
-Keep Electron_eInvMinusPInv
+keep Electron_eInvMinusPInv
 keep Electron_energyErr
 keep Electron_mvaTTH
 keep Electron_lostHits

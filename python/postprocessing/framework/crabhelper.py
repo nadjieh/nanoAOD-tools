@@ -42,6 +42,10 @@ def inputFiles():
        crabFiles[i]="root://cms-xrd-global.cern.ch/"+crabFiles[i]
    return crabFiles
 
+def outFileName():
+   JobNumber=sys.argv[1]
+   return "Skimmed_{0}.root".format(JobNumber)
+
 def runsAndLumis():
     if hasattr(PSet.process.source, "lumisToProcess"):
          lumis = PSet.process.source.lumisToProcess
